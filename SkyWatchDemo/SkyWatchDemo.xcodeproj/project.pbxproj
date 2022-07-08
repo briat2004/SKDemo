@@ -1,0 +1,671 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B00CBBD287719670003AA54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B00CBBC287719670003AA54 /* AppDelegate.swift */; };
+		1B00CBC1287719670003AA54 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B00CBC0287719670003AA54 /* ViewController.swift */; };
+		1B00CBC4287719670003AA54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B00CBC2287719670003AA54 /* Main.storyboard */; };
+		1B00CBC6287719680003AA54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B00CBC5287719680003AA54 /* Assets.xcassets */; };
+		1B00CBC9287719680003AA54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B00CBC7287719680003AA54 /* LaunchScreen.storyboard */; };
+		1B00CBD4287719680003AA54 /* SkyWatchDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B00CBD3287719680003AA54 /* SkyWatchDemoTests.swift */; };
+		1B00CBDE287719680003AA54 /* SkyWatchDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B00CBDD287719680003AA54 /* SkyWatchDemoUITests.swift */; };
+		1B00CBE0287719680003AA54 /* SkyWatchDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B00CBDF287719680003AA54 /* SkyWatchDemoUITestsLaunchTests.swift */; };
+		1B00CBED28771F3C0003AA54 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B00CBEC28771F3C0003AA54 /* BaseViewController.swift */; };
+		1B00CBEF287720280003AA54 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B00CBEE287720280003AA54 /* ApiManager.swift */; };
+		1B00CBF1287728240003AA54 /* SkyWatchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B00CBF0287728240003AA54 /* SkyWatchViewModel.swift */; };
+		1B00CBF32877284B0003AA54 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B00CBF22877284B0003AA54 /* Box.swift */; };
+		1B00CBF528772A0B0003AA54 /* UsersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B00CBF428772A0B0003AA54 /* UsersModel.swift */; };
+		1B00CBF72877382F0003AA54 /* AlbumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B00CBF62877382F0003AA54 /* AlbumModel.swift */; };
+		1B00CBF9287738430003AA54 /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B00CBF8287738430003AA54 /* PhotoModel.swift */; };
+		1B00CBFC287739F40003AA54 /* UsersCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B00CBFB287739F40003AA54 /* UsersCell.swift */; };
+		1B00CBFE287767530003AA54 /* AlbumsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B00CBFD287767530003AA54 /* AlbumsCell.swift */; };
+		1B00CC002877EDBF0003AA54 /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B00CBFF2877EDBF0003AA54 /* AlbumViewController.swift */; };
+		1B00CC022877F1840003AA54 /* PhotosCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B00CC012877F1840003AA54 /* PhotosCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1B00CBD0287719680003AA54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1B00CBB1287719670003AA54 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1B00CBB8287719670003AA54;
+			remoteInfo = SkyWatchDemo;
+		};
+		1B00CBDA287719680003AA54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1B00CBB1287719670003AA54 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1B00CBB8287719670003AA54;
+			remoteInfo = SkyWatchDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1B00CBB9287719670003AA54 /* SkyWatchDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkyWatchDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B00CBBC287719670003AA54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1B00CBC0287719670003AA54 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1B00CBC3287719670003AA54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1B00CBC5287719680003AA54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1B00CBC8287719680003AA54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1B00CBCA287719680003AA54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B00CBCF287719680003AA54 /* SkyWatchDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkyWatchDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B00CBD3287719680003AA54 /* SkyWatchDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyWatchDemoTests.swift; sourceTree = "<group>"; };
+		1B00CBD9287719680003AA54 /* SkyWatchDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkyWatchDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B00CBDD287719680003AA54 /* SkyWatchDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyWatchDemoUITests.swift; sourceTree = "<group>"; };
+		1B00CBDF287719680003AA54 /* SkyWatchDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyWatchDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1B00CBEC28771F3C0003AA54 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		1B00CBEE287720280003AA54 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		1B00CBF0287728240003AA54 /* SkyWatchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyWatchViewModel.swift; sourceTree = "<group>"; };
+		1B00CBF22877284B0003AA54 /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
+		1B00CBF428772A0B0003AA54 /* UsersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersModel.swift; sourceTree = "<group>"; };
+		1B00CBF62877382F0003AA54 /* AlbumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumModel.swift; sourceTree = "<group>"; };
+		1B00CBF8287738430003AA54 /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
+		1B00CBFB287739F40003AA54 /* UsersCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersCell.swift; sourceTree = "<group>"; };
+		1B00CBFD287767530003AA54 /* AlbumsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsCell.swift; sourceTree = "<group>"; };
+		1B00CBFF2877EDBF0003AA54 /* AlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
+		1B00CC012877F1840003AA54 /* PhotosCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1B00CBB6287719670003AA54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B00CBCC287719680003AA54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B00CBD6287719680003AA54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1B00CBB0287719670003AA54 = {
+			isa = PBXGroup;
+			children = (
+				1B00CBBB287719670003AA54 /* SkyWatchDemo */,
+				1B00CBD2287719680003AA54 /* SkyWatchDemoTests */,
+				1B00CBDC287719680003AA54 /* SkyWatchDemoUITests */,
+				1B00CBBA287719670003AA54 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1B00CBBA287719670003AA54 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1B00CBB9287719670003AA54 /* SkyWatchDemo.app */,
+				1B00CBCF287719680003AA54 /* SkyWatchDemoTests.xctest */,
+				1B00CBD9287719680003AA54 /* SkyWatchDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1B00CBBB287719670003AA54 /* SkyWatchDemo */ = {
+			isa = PBXGroup;
+			children = (
+				1B00CBBC287719670003AA54 /* AppDelegate.swift */,
+				1B00CBEC28771F3C0003AA54 /* BaseViewController.swift */,
+				1B00CBC0287719670003AA54 /* ViewController.swift */,
+				1B00CBFF2877EDBF0003AA54 /* AlbumViewController.swift */,
+				1B00CC052877F5380003AA54 /* ViewModels */,
+				1B00CC032877F5110003AA54 /* Cells */,
+				1B00CBFA287738DD0003AA54 /* Models */,
+				1B00CBF22877284B0003AA54 /* Box.swift */,
+				1B00CBEE287720280003AA54 /* ApiManager.swift */,
+				1B00CBC2287719670003AA54 /* Main.storyboard */,
+				1B00CBC5287719680003AA54 /* Assets.xcassets */,
+				1B00CBC7287719680003AA54 /* LaunchScreen.storyboard */,
+				1B00CBCA287719680003AA54 /* Info.plist */,
+			);
+			path = SkyWatchDemo;
+			sourceTree = "<group>";
+		};
+		1B00CBD2287719680003AA54 /* SkyWatchDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				1B00CBD3287719680003AA54 /* SkyWatchDemoTests.swift */,
+			);
+			path = SkyWatchDemoTests;
+			sourceTree = "<group>";
+		};
+		1B00CBDC287719680003AA54 /* SkyWatchDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1B00CBDD287719680003AA54 /* SkyWatchDemoUITests.swift */,
+				1B00CBDF287719680003AA54 /* SkyWatchDemoUITestsLaunchTests.swift */,
+			);
+			path = SkyWatchDemoUITests;
+			sourceTree = "<group>";
+		};
+		1B00CBFA287738DD0003AA54 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1B00CBF428772A0B0003AA54 /* UsersModel.swift */,
+				1B00CBF62877382F0003AA54 /* AlbumModel.swift */,
+				1B00CBF8287738430003AA54 /* PhotoModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1B00CC032877F5110003AA54 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1B00CC012877F1840003AA54 /* PhotosCell.swift */,
+				1B00CBFD287767530003AA54 /* AlbumsCell.swift */,
+				1B00CBFB287739F40003AA54 /* UsersCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		1B00CC052877F5380003AA54 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				1B00CBF0287728240003AA54 /* SkyWatchViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1B00CBB8287719670003AA54 /* SkyWatchDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B00CBE3287719680003AA54 /* Build configuration list for PBXNativeTarget "SkyWatchDemo" */;
+			buildPhases = (
+				1B00CBB5287719670003AA54 /* Sources */,
+				1B00CBB6287719670003AA54 /* Frameworks */,
+				1B00CBB7287719670003AA54 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SkyWatchDemo;
+			productName = SkyWatchDemo;
+			productReference = 1B00CBB9287719670003AA54 /* SkyWatchDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1B00CBCE287719680003AA54 /* SkyWatchDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B00CBE6287719680003AA54 /* Build configuration list for PBXNativeTarget "SkyWatchDemoTests" */;
+			buildPhases = (
+				1B00CBCB287719680003AA54 /* Sources */,
+				1B00CBCC287719680003AA54 /* Frameworks */,
+				1B00CBCD287719680003AA54 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1B00CBD1287719680003AA54 /* PBXTargetDependency */,
+			);
+			name = SkyWatchDemoTests;
+			productName = SkyWatchDemoTests;
+			productReference = 1B00CBCF287719680003AA54 /* SkyWatchDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1B00CBD8287719680003AA54 /* SkyWatchDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B00CBE9287719680003AA54 /* Build configuration list for PBXNativeTarget "SkyWatchDemoUITests" */;
+			buildPhases = (
+				1B00CBD5287719680003AA54 /* Sources */,
+				1B00CBD6287719680003AA54 /* Frameworks */,
+				1B00CBD7287719680003AA54 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1B00CBDB287719680003AA54 /* PBXTargetDependency */,
+			);
+			name = SkyWatchDemoUITests;
+			productName = SkyWatchDemoUITests;
+			productReference = 1B00CBD9287719680003AA54 /* SkyWatchDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1B00CBB1287719670003AA54 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					1B00CBB8287719670003AA54 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					1B00CBCE287719680003AA54 = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 1B00CBB8287719670003AA54;
+					};
+					1B00CBD8287719680003AA54 = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 1B00CBB8287719670003AA54;
+					};
+				};
+			};
+			buildConfigurationList = 1B00CBB4287719670003AA54 /* Build configuration list for PBXProject "SkyWatchDemo" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1B00CBB0287719670003AA54;
+			productRefGroup = 1B00CBBA287719670003AA54 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1B00CBB8287719670003AA54 /* SkyWatchDemo */,
+				1B00CBCE287719680003AA54 /* SkyWatchDemoTests */,
+				1B00CBD8287719680003AA54 /* SkyWatchDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1B00CBB7287719670003AA54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B00CBC9287719680003AA54 /* LaunchScreen.storyboard in Resources */,
+				1B00CBC6287719680003AA54 /* Assets.xcassets in Resources */,
+				1B00CBC4287719670003AA54 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B00CBCD287719680003AA54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B00CBD7287719680003AA54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1B00CBB5287719670003AA54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B00CC002877EDBF0003AA54 /* AlbumViewController.swift in Sources */,
+				1B00CBF9287738430003AA54 /* PhotoModel.swift in Sources */,
+				1B00CBFE287767530003AA54 /* AlbumsCell.swift in Sources */,
+				1B00CBEF287720280003AA54 /* ApiManager.swift in Sources */,
+				1B00CBC1287719670003AA54 /* ViewController.swift in Sources */,
+				1B00CBBD287719670003AA54 /* AppDelegate.swift in Sources */,
+				1B00CBFC287739F40003AA54 /* UsersCell.swift in Sources */,
+				1B00CBF32877284B0003AA54 /* Box.swift in Sources */,
+				1B00CBF1287728240003AA54 /* SkyWatchViewModel.swift in Sources */,
+				1B00CBF72877382F0003AA54 /* AlbumModel.swift in Sources */,
+				1B00CBED28771F3C0003AA54 /* BaseViewController.swift in Sources */,
+				1B00CC022877F1840003AA54 /* PhotosCell.swift in Sources */,
+				1B00CBF528772A0B0003AA54 /* UsersModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B00CBCB287719680003AA54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B00CBD4287719680003AA54 /* SkyWatchDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B00CBD5287719680003AA54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B00CBDE287719680003AA54 /* SkyWatchDemoUITests.swift in Sources */,
+				1B00CBE0287719680003AA54 /* SkyWatchDemoUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1B00CBD1287719680003AA54 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1B00CBB8287719670003AA54 /* SkyWatchDemo */;
+			targetProxy = 1B00CBD0287719680003AA54 /* PBXContainerItemProxy */;
+		};
+		1B00CBDB287719680003AA54 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1B00CBB8287719670003AA54 /* SkyWatchDemo */;
+			targetProxy = 1B00CBDA287719680003AA54 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1B00CBC2287719670003AA54 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1B00CBC3287719670003AA54 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1B00CBC7287719680003AA54 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1B00CBC8287719680003AA54 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1B00CBE1287719680003AA54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1B00CBE2287719680003AA54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1B00CBE4287719680003AA54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L9Z3A46K8M;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SkyWatchDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SkyWatchDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1B00CBE5287719680003AA54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L9Z3A46K8M;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SkyWatchDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SkyWatchDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1B00CBE7287719680003AA54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L9Z3A46K8M;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SkyWatchDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SkyWatchDemo.app/SkyWatchDemo";
+			};
+			name = Debug;
+		};
+		1B00CBE8287719680003AA54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L9Z3A46K8M;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SkyWatchDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SkyWatchDemo.app/SkyWatchDemo";
+			};
+			name = Release;
+		};
+		1B00CBEA287719680003AA54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L9Z3A46K8M;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SkyWatchDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SkyWatchDemo;
+			};
+			name = Debug;
+		};
+		1B00CBEB287719680003AA54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L9Z3A46K8M;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SkyWatchDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SkyWatchDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1B00CBB4287719670003AA54 /* Build configuration list for PBXProject "SkyWatchDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B00CBE1287719680003AA54 /* Debug */,
+				1B00CBE2287719680003AA54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1B00CBE3287719680003AA54 /* Build configuration list for PBXNativeTarget "SkyWatchDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B00CBE4287719680003AA54 /* Debug */,
+				1B00CBE5287719680003AA54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1B00CBE6287719680003AA54 /* Build configuration list for PBXNativeTarget "SkyWatchDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B00CBE7287719680003AA54 /* Debug */,
+				1B00CBE8287719680003AA54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1B00CBE9287719680003AA54 /* Build configuration list for PBXNativeTarget "SkyWatchDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B00CBEA287719680003AA54 /* Debug */,
+				1B00CBEB287719680003AA54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1B00CBB1287719670003AA54 /* Project object */;
+}
