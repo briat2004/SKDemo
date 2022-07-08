@@ -1,6 +1,6 @@
 # SKDemo
 
-1.圖片列表頁面用了iOS13支援的 UICollectionViewCompositionalLayout來製作每個cell item的變化。
+1.圖片列表頁面用UICollectionViewCompositionalLayout來製作每個cell item的變化。
 
 2.image fetch data時存cache, 以urlString當key。
 
