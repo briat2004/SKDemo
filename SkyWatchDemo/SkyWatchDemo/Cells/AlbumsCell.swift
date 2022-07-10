@@ -75,7 +75,7 @@ class AlbumsCell: UITableViewCell {
         imgView.leadingAnchor.constraint(equalTo: photoImageView.leadingAnchor).isActive = true
         imgView.topAnchor.constraint(equalTo: detailLabel.bottomAnchor, constant: paddingInset.top).isActive = true
         imgView.trailingAnchor.constraint(equalTo: titleLabel.trailingAnchor).isActive = true
-        imgView.heightAnchor.constraint(equalToConstant: 250).isActive = true
+        imgView.heightAnchor.constraint(equalTo: imgView.widthAnchor, multiplier: 0.7).isActive = true
         
         imgView.addSubview(imageCountLabel)
         imageCountLabel.centerXAnchor.constraint(equalTo: imgView.centerXAnchor).isActive = true
