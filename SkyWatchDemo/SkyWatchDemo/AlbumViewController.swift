@@ -61,6 +61,10 @@ class AlbumViewController: BaseViewController, UICollectionViewDelegate, UIColle
         return photosModel?.count ?? 0
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print(indexPath.row, photosModel?[indexPath.row].id)
+    }
+    
     private func getLayout() -> UICollectionViewCompositionalLayout {
         let mainHGroupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalWidth(1))
         let mainHGroup = NSCollectionLayoutGroup.vertical(layoutSize: mainHGroupSize, subitems: [threeItemsGroup(),
@@ -95,6 +99,7 @@ class AlbumViewController: BaseViewController, UICollectionViewDelegate, UIColle
         let sItem2 = NSCollectionLayoutItem(layoutSize: .init(widthDimension: .fractionalWidth(0.333), heightDimension: .fractionalHeight(1)))
         sItem2.contentInsets.trailing = 1
         let sItem3 = NSCollectionLayoutItem(layoutSize: .init(widthDimension: .fractionalWidth(0.333), heightDimension: .fractionalHeight(1)))
+        sItem3.contentInsets.trailing = 1
         
         let hGroupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(0.333))
         let hGroup = NSCollectionLayoutGroup.horizontal(layoutSize: hGroupSize, subitems: [sItem1, sItem2, sItem3])
