@@ -66,26 +66,31 @@ class AlbumViewController: BaseViewController, UICollectionViewDelegate, UIColle
     }
     
     private func getLayout() -> UICollectionViewCompositionalLayout {
-        let mainHGroupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalWidth(1))
+        let mainHGroupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalWidth(1 / 3 * 5))
         let mainHGroup = NSCollectionLayoutGroup.vertical(layoutSize: mainHGroupSize, subitems: [threeItemsGroup(),
-                                                                                                 oneBigItemsGroup()])
-
+                                                                                                 oneBigItemsGroup(),
+                                                                                                 threeItemsGroup(),
+                                                                                                 threeItemsGroup(),
+                                                                                                 threeItemsGroup()])
+        
         let section = NSCollectionLayoutSection(group: mainHGroup)
         return UICollectionViewCompositionalLayout(section: section)
     }
     
     func oneBigItemsGroup() -> NSCollectionLayoutGroup {
         let sItem1 = NSCollectionLayoutItem(layoutSize: .init(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(0.5)))
+        sItem1.contentInsets.trailing = 1
         let sItem2 = NSCollectionLayoutItem(layoutSize: .init(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(0.5)))
         sItem2.contentInsets.top = 1
+        sItem2.contentInsets.trailing = 1
         let vGroupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.333), heightDimension: .fractionalHeight(1))
         let vGroup = NSCollectionLayoutGroup.vertical(layoutSize: vGroupSize, subitems: [sItem1, sItem2])
-        vGroup.contentInsets.trailing = 1
+        
         
         let item1 = NSCollectionLayoutItem(layoutSize: .init(widthDimension: .fractionalWidth(0.666), heightDimension: .fractionalHeight(1)))
         item1.contentInsets.trailing = 1
         
-        let GroupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(0.666))
+        let GroupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(0.4))
         let Group = NSCollectionLayoutGroup.horizontal(layoutSize: GroupSize, subitems: [vGroup, item1])
         Group.contentInsets.top = 1
         
@@ -100,7 +105,7 @@ class AlbumViewController: BaseViewController, UICollectionViewDelegate, UIColle
         let sItem3 = NSCollectionLayoutItem(layoutSize: .init(widthDimension: .fractionalWidth(0.333), heightDimension: .fractionalHeight(1)))
         sItem3.contentInsets.trailing = 1
         
-        let hGroupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(0.333))
+        let hGroupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(0.2))
         let hGroup = NSCollectionLayoutGroup.horizontal(layoutSize: hGroupSize, subitems: [sItem1, sItem2, sItem3])
         hGroup.contentInsets.top = 1
         return hGroup
